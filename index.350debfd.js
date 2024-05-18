@@ -1,0 +1,2 @@
+var e=document.querySelector(".logo"),n=document.querySelector("body");function o(e){e.then(function(){n.insertAdjacentHTML("beforeend",'<div class="message">Promise was resolved!</div>')}).catch(function(){n.insertAdjacentHTML("beforeend",'<div class="message error-message">Promise was rejected!</div>')})}e.addEventListener("click",function(){o(new Promise(function(e){e()})),o(new Promise(function(e,n){setTimeout(function(){n(Error("Promise was rejected!"))},3e3)}))});
+//# sourceMappingURL=index.350debfd.js.map
